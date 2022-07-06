@@ -109,4 +109,4 @@ let productsRecently = [
   },
 ];
 
-export { newCustomers, Products, productsRecently };
+export { newCustomers, Products, productsRecently  };
