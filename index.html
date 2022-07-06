@@ -48,10 +48,12 @@
     </header>
     <!-- ! END HEADER -->
 
-    <!-- * BEGIN SIDEBAR -->
-    <div class="flex pt-[70px] h-full absolute">
-      <div class="w-60 md:bg-white border-r-2">
-        <li class="list-none border-b-2">
+    <div class="flex pt-[70px] w-full flex-col">
+      <!-- *! BEGIN SIDEBAR -->
+      <div
+        class="w-60 md:bg-white border-r-2 fixed top-0 bottom-0 left-0 pt-[70px]"
+      >
+        <li class="relative border-b-2 list-none">
           <a
             class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-[#111827] text-ellipsis whitespace-nowrap rounded hover:text-[#1C64F2] transition duration-300 ease-in-out"
             href="#!"
@@ -73,7 +75,7 @@
             <span>Bảng điều khiển</span>
           </a>
         </li>
-        <li class="list-none">
+        <li class="relative list-none">
           <a
             class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-[#111827] text-ellipsis whitespace-nowrap rounded hover:text-[#1C64F2] transition duration-300 ease-in-out"
             href="#!"
@@ -99,7 +101,7 @@
             <span>Danh sách sản phẩm</span>
           </a>
         </li>
-        <li class="list-none">
+        <li class="relative list-none">
           <a
             class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-[#111827] text-ellipsis whitespace-nowrap rounded hover:text-[#1C64F2] transition duration-300 ease-in-out"
             href="#!"
@@ -119,7 +121,7 @@
             <span>Khách hàng</span>
           </a>
         </li>
-        <li class="list-none">
+        <li class="relative list-none">
           <a
             class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-[#111827] text-ellipsis whitespace-nowrap rounded hover:text-[#1C64F2] transition duration-300 ease-in-out"
             href="#!"
@@ -142,13 +144,14 @@
           </a>
         </li>
         <button
-          class="w-60 bg-[#1E429F] text-[#E1EFFE] h-[32px] md:absolute md:bottom-0 cursor-pointer"
+          class="w-full bg-[#1E429F] text-[#E1EFFE] h-[32px] md:absolute md:bottom-0 cursor-pointer"
         >
           Thu gọn
         </button>
       </div>
-
-      <div class="w-[1317px]">
+      <!--*! END SIDEBAR -->
+      <div class="ml-[240px]">
+        <!-- * BEGIN CHART  -->
         <div class="shadow-lg rounded-lg overflow-hidden mx-6 mt-6">
           <div
             class="py-3 px-5 text-[20px] leading-[30px] font-bold text-gray-900"
@@ -157,12 +160,17 @@
           </div>
           <canvas class="p-10" id="chartLine"></canvas>
         </div>
+        <!-- * END CHART -->
+        <!-- ? BEGIN CUSTOMERS AND PRODUCTS -->
+        <div class="grid">
+          <div class="new-customers"></div>
+        </div>
+
+        <!-- ? END CUSTOMERS AND PRODUCTS -->
       </div>
     </div>
-    <!--* END SIDEBAR -->
-
-    <script src="./src/javascript/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./src/javascript/customers/index.js"></script>
     <script>
       const labels = [
         "01 June",
