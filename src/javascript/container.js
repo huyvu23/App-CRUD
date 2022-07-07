@@ -40,33 +40,33 @@ let newCustomers = [
 let Products = [
   {
     nameProducts: "Macbook Pro M1",
-    codeProduct: 123456,
-    totalSales: 20,
+    codeProduct: "Mã SP:123456",
+    totalSales: 30,
   },
   {
     nameProducts: "Macbook Air M2",
-    codeProduct: 123456,
-    totalSales: 20,
+    codeProduct: "Mã SP:123456",
+    totalSales: 30,
   },
   {
     nameProducts: "Macbook Air M1",
-    codeProduct: 123456,
-    totalSales: 100,
+    codeProduct: "Mã SP:123456",
+    totalSales: 30,
   },
   {
     nameProducts: "Iphone",
-    codeProduct: 123456,
-    totalSales: 80,
+    codeProduct: "Mã SP:123456",
+    totalSales: 30,
   },
   {
     nameProducts: "AirPod",
-    codeProduct: 123456,
-    totalSales: 90,
+    codeProduct: "Mã SP:123456",
+    totalSales: 30,
   },
   {
     nameProducts: "JBL Pro",
-    codeProduct: 123456,
-    totalSales: 100,
+    codeProduct: "Mã SP:123456",
+    totalSales: 30,
   },
 ];
 
@@ -74,39 +74,39 @@ let productsRecently = [
   {
     name: "Bale",
     time: "Jun 23,2022",
-    totalMoney: "2.300.000",
+    totalMoney: "2.300.000 VNĐ",
     status: "Hoàn thành",
   },
   {
     name: "Bruno",
     time: "Jun 23,2022",
-    totalMoney: "2.300.000",
+    totalMoney: "2.300.000 VNĐ",
     status: "Đã huỷ",
   },
   {
     name: "Kevin",
     time: "Jun 23,2022",
-    totalMoney: "2.300.000",
+    totalMoney: "2.300.000 VNĐ",
     status: "Đang giao",
   },
   {
     name: "Tony",
     time: "Jun 23,2022",
-    totalMoney: "2.300.000",
+    totalMoney: "2.300.000 VNĐ",
     status: "Đang giao",
   },
   {
     name: "Silva",
     time: "Jun 23,2022",
-    totalMoney: "2.300.000",
+    totalMoney: "2.300.000 VNĐ",
     status: "Hoàn thành",
   },
   {
     name: "Selena",
     time: "Jun 23,2022",
-    totalMoney: "2.300.000",
+    totalMoney: "2.300.000 VNĐ",
     status: "Hoàn thành",
   },
 ];
 
-export { newCustomers, Products, productsRecently  };
+export { newCustomers, Products, productsRecently };

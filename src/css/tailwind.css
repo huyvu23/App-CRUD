@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .background {
+    @apply bg-white;
+  }
+  .text-black {
+    @apply text-gray-900;
+  }
+  .font-text {
+    @apply text-[20px];
+  }
+  .border {
+    @apply rounded-2xl;
+  }
+  .font-weight {
+    @apply font-semibold;
+  }
+  .font-small {
+    @apply font-normal;
+  }
+  .padding-table {
+    @apply px-[24px]
+    py-[20px];
+  }
+
+  .success {
+    @apply inline-block px-6 py-2.5 bg-[#def7ec] text-[#3a7d6a]
+    font-medium text-xs leading-tight 
+    rounded-full shadow-md;
+  }
+  .cancel {
+    @apply inline-block px-[10px] py-[2px] bg-[#fbd5d5] 
+    text-[#bf6160] font-medium text-xs leading-tight  
+    rounded-full shadow-md;
+  }
+
+  .todo {
+    @apply inline-block px-6 py-2.5 bg-[#e1effe] text-[#2a4da5] 
+    font-medium text-xs leading-tight rounded-full 
+    shadow-md;
+  }
+}
