@@ -8,10 +8,10 @@ let createProducts = () => {
       <div class="flex justify-between items-center py-3">
         <div>
             <h1 class="text-black font-weight">${product.nameProducts}</h1>
-            <div class="text-[12px]">${product.codeProduct}</div>
+            <div class="text-xs text-[#6B7280]">${product.codeProduct}</div>
         </div>
         <div class="flex ">
-          <div class="text-black font-weight mr-[5px]">${product.totalSales}</div> <span class="font-extralight">sales</span></div>
+          <div class="text-black font-weight mr-1.5">${product.totalSales}</div> <span class="font-extralight">sales</span></div>
         </div>
     </div>`;
   });

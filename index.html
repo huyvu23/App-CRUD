@@ -169,13 +169,15 @@
         <!--*! END SIDEBAR -->
         <section class="md:ml-[240px]">
           <!-- * BEGIN CHART  -->
-          <section class="shadow-lg rounded-lg overflow-hidden mx-6 mt-6">
+          <section
+            class="shadow-lg rounded-lg overflow-hidden mx-6 mt-6 background"
+          >
             <div
               class="py-3 px-5 font-text leading-[30px] font-bold text-gray-900"
             >
               Doanh Thu
             </div>
-            <canvas class="p-10" id="chartLine"></canvas>
+            <canvas class="md:p-10" id="chartLine"></canvas>
           </section>
           <!-- * END CHART -->
           <!-- ? BEGIN CUSTOMERS AND PRODUCTS -->
@@ -229,13 +231,13 @@
                             </th>
                             <th
                               scope="col"
-                              class="md:text-sm md:font-medium md:text-black md:px-6 md:py-4 md:text-left"
+                              class="text-sm font-medium text-black px-6 py-4 text-left"
                             >
                               THÀNH TIỀN
                             </th>
                             <th
                               scope="col"
-                              class="md md:text-sm md:font-medium md:text-black md:px-6 md:py-4 md:text-left"
+                              class="text-sm font-medium text-black px-6 py-4 text-left"
                             >
                               TRẠNG THÁI
                             </th>
@@ -313,38 +315,6 @@
       type="module"
       src="./src/javascript/productsRecently/productRecen.js"
     ></script>
-    <script>
-      const labels = [
-        "01 June",
-        "02 June",
-        "03 June",
-        "04 June",
-        "05 June",
-        "06 June",
-        "07 June",
-      ];
-      const data = {
-        labels: labels,
-        datasets: [
-          {
-            label: "Sales",
-            backgroundColor: "white",
-            borderColor: "#0f9f6e",
-            data: [0, 400, 800, 1200, 1600, 2000, 2400],
-          },
-        ],
-      };
-
-      const configLineChart = {
-        type: "line",
-        data,
-        options: {},
-      };
-
-      var chartLine = new Chart(
-        document.getElementById("chartLine"),
-        configLineChart
-      );
-    </script>
+    <script type="module" src="./src/javascript/chart/chart.js"></script>
   </body>
 </html>

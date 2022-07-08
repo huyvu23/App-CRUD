@@ -16,7 +16,7 @@ let createTable = () => {
               ${item.totalMoney}
               </td>
               <td class="text-sm text-black font-light px-6 py-4 whitespace-nowrap">
-              <span class="cancel">
+              <span class="${item.class}">
               ${item.status}
               </span>
               </td>
