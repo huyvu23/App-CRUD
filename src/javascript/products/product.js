@@ -11,7 +11,7 @@ let createProducts = () => {
             <div class="text-xs text-[#6B7280]">${product.codeProduct}</div>
         </div>
         <div class="flex ">
-          <div class="text-black font-weight mr-1.5">${product.totalSales}</div> <span class="font-extralight">sales</span></div>
+          <div class="text-black font-weight" style="margin-right:5px">${product.totalSales}</div> <span class="font-extralight">sales</span></div>
         </div>
     </div>`;
   });

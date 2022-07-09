@@ -25,7 +25,6 @@
     @apply px-[24px]
     py-[20px];
   }
-
   .success {
     @apply inline-block px-6 py-2.5 bg-[#def7ec] text-[#3a7d6a]
     font-medium text-xs leading-tight 
@@ -36,7 +35,6 @@
     text-[#bf6160] font-medium text-xs leading-tight  
     rounded-full shadow-md;
   }
-
   .todo {
     @apply inline-block px-6 py-2.5 bg-[#e1effe] text-[#2a4da5] 
     font-medium text-xs leading-tight rounded-full 

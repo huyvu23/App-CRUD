@@ -1,6 +1,6 @@
 import { productsRecently } from "../container.js";
 
-let tableOrder = document.querySelector("tbody");
+let tableOrder = document.querySelector(".tableProductsHome");
 
 let createTable = () => {
   productsRecently.forEach((item) => {
