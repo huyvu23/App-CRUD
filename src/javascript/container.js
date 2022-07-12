@@ -123,6 +123,7 @@ let listProducts = [
     amount: "100 cái",
     price: "20.000.000",
     status: "Còn Hàng",
+    class: "success",
   },
   {
     name: "PS5",
@@ -131,6 +132,7 @@ let listProducts = [
     amount: "100 cái",
     price: "20.000.000",
     status: "Còn Hàng",
+    class: "success",
   },
   {
     name: "Iphone 11",
@@ -139,6 +141,7 @@ let listProducts = [
     amount: "13 cái",
     price: "10.000.000",
     status: "Còn Hàng",
+    class: "success",
   },
   {
     name: "Ghế công thái học",
@@ -147,6 +150,7 @@ let listProducts = [
     amount: "10 cái",
     price: "8.000.000",
     status: "Còn Hàng",
+    class: "success",
   },
   {
     name: "JBL",
@@ -155,6 +159,7 @@ let listProducts = [
     amount: "300 cái",
     price: "3.000.000",
     status: "Còn Hàng",
+    class: "success",
   },
   {
     name: "Sony",
@@ -163,6 +168,7 @@ let listProducts = [
     amount: "100 cái",
     price: "20.000.000",
     status: "Còn Hàng",
+    class: "success",
   },
   {
     name: "Bàn phím cơ",
@@ -171,6 +177,7 @@ let listProducts = [
     amount: "1000 cái",
     price: "1.000.000",
     status: "Còn Hàng",
+    class: "success",
   },
   {
     name: "Marshall",
@@ -179,6 +186,7 @@ let listProducts = [
     amount: "0 cái",
     price: "7.000.000",
     status: "Hết Hàng",
+    class: "cancel",
   },
   {
     name: "Chuột Logitech G603",
@@ -187,6 +195,7 @@ let listProducts = [
     amount: "100 cái",
     price: "1.000.000",
     status: "Còn Hàng",
+    class: "success",
   },
   {
     name: "Iphone X",
@@ -195,6 +204,7 @@ let listProducts = [
     amount: "100 cái",
     price: "5.000.000",
     status: "Còn Hàng",
+    class: "success",
   },
   {
     name: "Sạc Iphone",
@@ -203,6 +213,7 @@ let listProducts = [
     amount: "100 cái",
     price: "100.000",
     status: "Còn Hàng",
+    class: "success",
   },
   {
     name: "Ốp điện thoại",
@@ -211,6 +222,7 @@ let listProducts = [
     amount: "80 cái",
     price: "20.000.000",
     status: "Còn Hàng",
+    class: "success",
   },
   {
     name: "MacBook",
@@ -219,6 +231,7 @@ let listProducts = [
     amount: "100 cái",
     price: "20.000.000",
     status: "Còn Hàng",
+    class: "success",
   },
   {
     name: "Thinkpad",
@@ -227,6 +240,7 @@ let listProducts = [
     amount: "100 cái",
     price: "20.000.000",
     status: "Còn Hàng",
+    class: "success",
   },
   {
     name: "Bàn làm việc",
@@ -235,6 +249,7 @@ let listProducts = [
     amount: "0 cái",
     price: "4.000.000",
     status: "Hết Hàng",
+    class:"cancel"
   },
   {
     name: "Iphone SE",
@@ -243,6 +258,7 @@ let listProducts = [
     amount: "200 cái",
     price: "3.000.000",
     status: "Còn Hàng",
+    class: "success",
   },
   {
     name: "Màn Hình Dell",
@@ -251,6 +267,7 @@ let listProducts = [
     amount: "10 cái",
     price: "12.000.000",
     status: "Còn Hàng",
+    class: "success",
   },
   {
     name: " Mac studio ",
@@ -259,6 +276,7 @@ let listProducts = [
     amount: "100 cái",
     price: "100.000.000",
     status: "Còn Hàng",
+    class: "success",
   },
   {
     name: "Studio display",
@@ -267,6 +285,7 @@ let listProducts = [
     amount: "100 cái",
     price: "50.000.000",
     status: "Còn Hàng",
+    class: "success",
   },
   {
     name: "Magic Mouse",
@@ -275,6 +294,7 @@ let listProducts = [
     amount: "30 cái",
     price: "4.000.000",
     status: "Còn Hàng",
+    class: "success",
   },
 ];
 

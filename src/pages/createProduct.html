@@ -1,0 +1,116 @@
+<section class="mt-[25px] mx-6">
+  <div class="w-full overflow-visible background border px-[16px] py-[24px]">
+    <h1 class="font-text text-black font-weight">Thêm mới sản phẩm</h1>
+    <!-- !SAVE AND BACK -->
+    <section class="mt-[28px] flex justify-end">
+      <div>
+        <button
+          type="button"
+          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+        >
+          Lưu lại
+        </button>
+        <button
+          type="button"
+          class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+          onclick="route()"
+        >
+          <a href="/listProducts"> Quay lại </a>
+        </button>
+      </div>
+    </section>
+    <!-- !END -->
+
+    <!-- *TODO BEGIN INPUT PRODUCT -->
+    <section>
+      <div class="grid xl:grid-cols-2 xl:gap-6">
+        <div>
+          <label
+            for="base-input"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+            >Sản phẩm</label
+          >
+          <input
+            type="text"
+            id="base-input"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          />
+        </div>
+        <div>
+          <label
+            for="base-input"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+            >Số lượng</label
+          >
+          <input
+            type="text"
+            id="base-input"
+            class="bg-gray-50 border-solid border-2 rounded-lg border-gray-300 text-gray-900 text-sm dark:border-l-gray-700 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          />
+        </div>
+      </div>
+      <div class="grid xl:grid-cols-2 xl:gap-6 mt-3">
+        <div>
+          <label
+            for="states"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+            >Loại SP</label
+          >
+          <select
+            id="states"
+            class="bg-gray-50 border-solid border-2 rounded-lg border-gray-300 text-gray-900 text-sm dark:border-l-gray-700 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          >
+            <option selected>Loại SP</option>
+            <option value="chair">Ghế</option>
+            <option value="desktop">Máy tính</option>
+            <option value="mobile">Điện thoại</option>
+            <option value="headphone">Tai nghe</option>
+          </select>
+        </div>
+        <div>
+          <label
+            for="states"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+            >Trạng thái</label
+          >
+          <select
+            id="states"
+            class="bg-gray-50 border-solid border-2 rounded-lg border-gray-300 text-gray-900 text-sm dark:border-l-gray-700 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          >
+            <option selected>Trạng thái</option>
+            <option value="chair">Còn hàng</option>
+            <option value="desktop">Hết hàng</option>
+          </select>
+        </div>
+      </div>
+      <div class="grid xl:grid-cols-2 xl:gap-6 mt-3">
+        <div class="">
+          <label
+            for="base-input"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+            >Ngày tạo</label
+          >
+          <input
+            type="datetime-local"
+            id="birthdaytime"
+            name="birthdaytime"
+            class="bg-gray-50 border-solid border-2 rounded-lg border-gray-300 text-gray-900 text-sm dark:border-l-gray-700 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          />
+        </div>
+        <div>
+          <label
+            for="base-input"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+            >Giá bán</label
+          >
+          <input
+            type="text"
+            id="base-input"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- TODO END INPUT PRODUCT -->
+  </div>
+</section>
