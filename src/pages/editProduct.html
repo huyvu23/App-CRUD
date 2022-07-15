@@ -1,10 +1,11 @@
 <section class="mt-[25px] mx-6">
   <div class="w-full overflow-visible background border px-[16px] py-[24px]">
-    <h1 class="font-text text-black font-weight">Cập nhật sản phẩm</h1>
     <!-- !SAVE AND BACK -->
-    <section class="mt-[28px] flex justify-end">
+    <section class="mt-[28px] flex justify-between">
+      <h1 class="font-text text-black font-weight">Cập nhật sản phẩm</h1>
       <div>
         <button
+          id="Save"
           type="button"
           class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
         >
@@ -22,7 +23,7 @@
     <!-- !END -->
 
     <!-- *TODO BEGIN INPUT PRODUCT -->
-    <section>
+    <form>
       <div class="grid xl:grid-cols-2 xl:gap-6">
         <div>
           <label
@@ -31,9 +32,9 @@
             >Sản phẩm</label
           >
           <input
+            id="name_Update_Product"
             type="text"
-            id="base-input"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            class="bg-gray-50 border-solid border-2 rounded-lg border-gray-300 text-gray-900 text-sm dark:border-l-gray-700 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           />
         </div>
         <div>
@@ -44,7 +45,7 @@
           >
           <input
             type="text"
-            id="base-input"
+            id="amount_Update_Product"
             class="bg-gray-50 border-solid border-2 rounded-lg border-gray-300 text-gray-900 text-sm dark:border-l-gray-700 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           />
         </div>
@@ -57,8 +58,9 @@
             >Ngày tạo</label
           >
           <input
-            type="datetime-local"
-            id="birthdaytime"
+            disabled
+            type="date"
+            id="birthdaytime_Update"
             name="birthdaytime"
             class="bg-gray-50 border-solid border-2 rounded-lg border-gray-300 text-gray-900 text-sm dark:border-l-gray-700 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           />
@@ -71,8 +73,8 @@
           >
           <input
             type="text"
-            id="base-input"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            id="price_Update_Product"
+            class="bg-gray-50 border-solid border-2 rounded-lg border-gray-300 text-gray-900 text-sm dark:border-l-gray-700 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           />
         </div>
       </div>
@@ -84,14 +86,15 @@
             >Loại SP</label
           >
           <select
-            id="states"
+            id="type_Update_Product"
             class="bg-gray-50 border-solid border-2 rounded-lg border-gray-300 text-gray-900 text-sm dark:border-l-gray-700 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           >
             <option selected>Loại SP</option>
-            <option value="chair">Ghế</option>
-            <option value="desktop">Máy tính</option>
-            <option value="mobile">Điện thoại</option>
-            <option value="headphone">Tai nghe</option>
+            <option value="Ghế">Ghế</option>
+            <option value="Máy Tính">Máy tính</option>
+            <option value="Điện Thoại">Điện thoại</option>
+            <option value="Tai Nghe">Tai nghe</option>
+            <option value="Bàn Phím">Bàn Phím</option>
           </select>
         </div>
         <div>
@@ -101,16 +104,16 @@
             >Trạng thái</label
           >
           <select
-            id="states"
+            id="status_Update_Product"
             class="bg-gray-50 border-solid border-2 rounded-lg border-gray-300 text-gray-900 text-sm dark:border-l-gray-700 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           >
             <option selected>Trạng thái</option>
-            <option value="chair">Còn hàng</option>
-            <option value="desktop">Hết hàng</option>
+            <option value="Còn Hàng">Còn Hàng</option>
+            <option value="Hết Hàng">Hết Hàng</option>
           </select>
         </div>
       </div>
-    </section>
+    </form>
     <!-- TODO END INPUT PRODUCT -->
   </div>
 </section>
