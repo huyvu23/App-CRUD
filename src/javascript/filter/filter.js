@@ -12,7 +12,7 @@ tableFilter.innerHTML += `
           <input
             type="text"
             id="base-input"
-            class="background border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            class="background border-solid border-2 rounded-lg border-gray-300 text-gray-900 text-sm dark:border-l-gray-700 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           />
         </div>
         <div>
@@ -39,11 +39,12 @@ tableFilter.innerHTML += `
             id="states"
             class="background border-solid border-2 rounded-lg border-gray-300 text-gray-900 text-sm dark:border-l-gray-700 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           >
-            <option selected>Loại SP</option>
-            <option value="chair">Ghế</option>
-            <option value="desktop">Máy tính</option>
-            <option value="mobile">Điện thoại</option>
-            <option value="headphone">Tai nghe</option>
+          <option selected>Loại SP</option>
+          <option value="Ghế">Ghế</option>
+          <option value="Máy Tính">Máy tính</option>
+          <option value="Điện Thoại">Điện thoại</option>
+          <option value="Tai Nghe">Tai nghe</option>
+          <option value="Bàn Phím">Bàn Phím</option>
           </select>
         </div>
         <div>
@@ -56,9 +57,9 @@ tableFilter.innerHTML += `
             id="states"
             class="background border-solid border-2 rounded-lg border-gray-300 text-gray-900 text-sm dark:border-l-gray-700 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           >
-            <option selected>Trạng thái</option>
-            <option value="chair">Còn hàng</option>
-            <option value="desktop">Hết hàng</option>
+          <option selected>Trạng thái</option>
+          <option value="Còn Hàng">Còn Hàng</option>
+          <option value="Hết Hàng">Hết Hàng</option>
           </select>
         </div>
       </div>

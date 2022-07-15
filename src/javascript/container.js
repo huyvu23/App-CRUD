@@ -119,7 +119,7 @@ let listProducts = [
   {
     name: "Iphone 13",
     type: "Điện thoại",
-    createDate: "Jun 23,2022",
+    createDate: new Date(2022, 5, 23),
     amount: "100 cái",
     price: "20.000.000",
     status: "Còn Hàng",
@@ -128,7 +128,7 @@ let listProducts = [
   {
     name: "PS5",
     type: "Đồ điển tử",
-    createDate: "Jun 23,2022",
+    createDate: new Date(2022, 5, 23),
     amount: "100 cái",
     price: "20.000.000",
     status: "Còn Hàng",
@@ -137,7 +137,7 @@ let listProducts = [
   {
     name: "Iphone 11",
     type: "Điện thoại",
-    createDate: "Jun 23,2022",
+    createDate: new Date(2022, 5, 23),
     amount: "13 cái",
     price: "10.000.000",
     status: "Còn Hàng",
@@ -146,7 +146,7 @@ let listProducts = [
   {
     name: "Ghế công thái học",
     type: "Ghế",
-    createDate: "Jun 23,2022",
+    createDate: new Date(2022, 5, 23),
     amount: "10 cái",
     price: "8.000.000",
     status: "Còn Hàng",
@@ -155,7 +155,7 @@ let listProducts = [
   {
     name: "JBL",
     type: "Loa",
-    createDate: "Jun 23,2022",
+    createDate: new Date(2022, 5, 23),
     amount: "300 cái",
     price: "3.000.000",
     status: "Còn Hàng",
@@ -164,7 +164,7 @@ let listProducts = [
   {
     name: "Sony",
     type: "Tai nghe",
-    createDate: "Jun 23,2022",
+    createDate: new Date(2022, 5, 23),
     amount: "100 cái",
     price: "20.000.000",
     status: "Còn Hàng",
@@ -172,8 +172,8 @@ let listProducts = [
   },
   {
     name: "Bàn phím cơ",
-    type: "Bàn phím",
-    createDate: "Jun 23,2022",
+    type: "Bàn Phim",
+    createDate: new Date(2022, 5, 23),
     amount: "1000 cái",
     price: "1.000.000",
     status: "Còn Hàng",
@@ -182,7 +182,7 @@ let listProducts = [
   {
     name: "Marshall",
     type: "Loa",
-    createDate: "Jun 23,2022",
+    createDate: new Date(2022, 5, 23),
     amount: "0 cái",
     price: "7.000.000",
     status: "Hết Hàng",
@@ -191,7 +191,7 @@ let listProducts = [
   {
     name: "Chuột Logitech G603",
     type: "Chuột",
-    createDate: "Jun 23,2022",
+    createDate: new Date(2022, 5, 23),
     amount: "100 cái",
     price: "1.000.000",
     status: "Còn Hàng",
@@ -200,7 +200,7 @@ let listProducts = [
   {
     name: "Iphone X",
     type: "Điện thoại",
-    createDate: "Jun 23,2022",
+    createDate: new Date(2022, 5, 23),
     amount: "100 cái",
     price: "5.000.000",
     status: "Còn Hàng",
@@ -209,7 +209,7 @@ let listProducts = [
   {
     name: "Sạc Iphone",
     type: "Sạc",
-    createDate: "Jun 23,2022",
+    createDate: new Date(2022, 5, 23),
     amount: "100 cái",
     price: "100.000",
     status: "Còn Hàng",
@@ -218,7 +218,7 @@ let listProducts = [
   {
     name: "Ốp điện thoại",
     type: "Ốp",
-    createDate: "Jun 23,2022",
+    createDate: new Date(2022, 5, 23),
     amount: "80 cái",
     price: "20.000.000",
     status: "Còn Hàng",
@@ -227,7 +227,7 @@ let listProducts = [
   {
     name: "MacBook",
     type: "Máy tính",
-    createDate: "Jun 23,2022",
+    createDate: new Date(2022, 5, 23),
     amount: "100 cái",
     price: "20.000.000",
     status: "Còn Hàng",
@@ -236,7 +236,7 @@ let listProducts = [
   {
     name: "Thinkpad",
     type: "Máy tính",
-    createDate: "Jun 23,2022",
+    createDate: new Date(2022, 5, 23),
     amount: "100 cái",
     price: "20.000.000",
     status: "Còn Hàng",
@@ -245,16 +245,16 @@ let listProducts = [
   {
     name: "Bàn làm việc",
     type: "Bàn",
-    createDate: "Jun 23,2022",
+    createDate: new Date(2022, 5, 23),
     amount: "0 cái",
     price: "4.000.000",
     status: "Hết Hàng",
-    class:"cancel"
+    class: "cancel",
   },
   {
     name: "Iphone SE",
     type: "Điện thoại",
-    createDate: "Jun 23,2022",
+    createDate: new Date(2022, 5, 23),
     amount: "200 cái",
     price: "3.000.000",
     status: "Còn Hàng",
@@ -263,7 +263,7 @@ let listProducts = [
   {
     name: "Màn Hình Dell",
     type: "Màn hình",
-    createDate: "Jun 23,2022",
+    createDate: new Date(2022, 5, 23),
     amount: "10 cái",
     price: "12.000.000",
     status: "Còn Hàng",
@@ -272,7 +272,7 @@ let listProducts = [
   {
     name: " Mac studio ",
     type: "Máy tinh",
-    createDate: "Jun 23,2022",
+    createDate: new Date(2022, 5, 23),
     amount: "100 cái",
     price: "100.000.000",
     status: "Còn Hàng",
@@ -281,7 +281,7 @@ let listProducts = [
   {
     name: "Studio display",
     type: "Màn hình",
-    createDate: "Jun 23,2022",
+    createDate: new Date(2022, 5, 23),
     amount: "100 cái",
     price: "50.000.000",
     status: "Còn Hàng",
@@ -290,7 +290,7 @@ let listProducts = [
   {
     name: "Magic Mouse",
     type: "Chuột",
-    createDate: "Jun 23,2022",
+    createDate: new Date(2022, 5, 23),
     amount: "30 cái",
     price: "4.000.000",
     status: "Còn Hàng",

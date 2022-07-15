@@ -3,6 +3,7 @@ const route = (event) => {
   event.preventDefault();
   window.history.pushState({}, "", event.target.href);
   handleLocation();
+  location.reload();
 };
 
 const routes = {

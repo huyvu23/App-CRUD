@@ -1,17 +1,11 @@
 import { listProducts } from "../container";
-
+// localStorage.setItem("listProducts", JSON.stringify(listProducts));
 let buttonSave = document.getElementById("save_Create_Account");
 buttonSave.addEventListener("click", (e) => {
   e.preventDefault();
   let name = document.getElementById("name_Create_Product").value;
   let type = document.getElementById("type_Create_Product").value;
   let createDate = document.getElementById("birthdaytime").value;
-  let Day = new Date(createDate).getDate();
-  let Year = new Date(createDate).getFullYear();
-  let Month = new Date(createDate).toLocaleString("default", {
-    month: "long",
-  });
-  let OurNewDateFormat = `${Month} ${Day},${Year}`;
   let amount = document.getElementById("amount_Create_Product").value;
   let convertAmount = parseInt(amount);
   let price = document.getElementById("price_Create_Product").value;
@@ -27,14 +21,14 @@ buttonSave.addEventListener("click", (e) => {
   const newProduct = {
     name: name,
     type: type,
-    createDate: OurNewDateFormat,
+    createDate: createDate,
     amount: convertAmount,
     price: price,
     status: status,
     class: classOfProduct,
   };
   let oldData = JSON.parse(localStorage.getItem("listProducts"));
-  console.log(oldData);
+  // console.log(oldData);
   oldData.unshift(newProduct);
   localStorage.setItem("listProducts", JSON.stringify(oldData));
 
