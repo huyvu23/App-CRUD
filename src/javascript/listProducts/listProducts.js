@@ -91,7 +91,7 @@ const btnDeleteClick = () => {
   for (let i = 0; i < deleteButtons.length; i++) {
     var deleteButton = deleteButtons[i];
     deleteButton.addEventListener("click", (e) => {
-      //   console.log(parseInt(e.target.id));
+      // console.log(parseInt(e.target.id));
       listProductsLocal.splice(parseInt(e.target.id), 1);
       localStorage.setItem("listProducts", JSON.stringify(listProductsLocal));
       tableProducts.innerHTML = "";
@@ -105,7 +105,6 @@ btnDeleteClick();
 
 //  ! BUTTON NEXT
 btnNext.addEventListener("click", (e) => {
-  e.preventDefault();
   currentPage++;
   if (currentPage > totalPages) {
     currentPage = totalPages;
@@ -124,7 +123,6 @@ btnNext.addEventListener("click", (e) => {
 
 // !BUTTON PREV
 btnPrev.addEventListener("click", (e) => {
-  e.preventDefault();
   currentPage--;
   if (currentPage <= 1) {
     currentPage = 1;

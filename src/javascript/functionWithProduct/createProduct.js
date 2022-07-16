@@ -28,7 +28,6 @@ buttonSave.addEventListener("click", (e) => {
     class: classOfProduct,
   };
   let oldData = JSON.parse(localStorage.getItem("listProducts"));
-  // console.log(oldData);
   oldData.unshift(newProduct);
   localStorage.setItem("listProducts", JSON.stringify(oldData));
 

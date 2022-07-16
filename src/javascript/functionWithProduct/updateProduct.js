@@ -3,10 +3,6 @@ let listProductsLocal = JSON.parse(localStorage.getItem("listProducts"));
 let productNeedUpdate = JSON.parse(localStorage.getItem("productNeedUpdate"));
 let saveBtn = document.querySelector("#Save");
 
-// console.log(productNeedUpdate);
-// console.log(typeof productNeedUpdate[0].createDate);
-// console.log(productNeedUpdate[0]);
-
 document.getElementById("name_Update_Product").value =
   productNeedUpdate[0].value.name;
 document.getElementById("amount_Update_Product").value =
@@ -45,7 +41,6 @@ saveBtn.addEventListener("click", (e) => {
     status: statusUpdate,
     class: classOfProductUpdate,
   };
-  console.log(productUpdate[productNeedUpdate[0].id]);
   localStorage.setItem("listProducts", JSON.stringify(productUpdate));
   //! set value = string empty when finish onclick
   document.getElementById("name_Update_Product").value = "";
