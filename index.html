@@ -18,11 +18,11 @@
       <header class="w-full h-[70px] background border-b-2 z-[100] fixed">
         <nav class="h-full px-5">
           <ul class="h-full flex items-center justify-between">
-            <li>
+            <li onclick="route()">
               <span
                 class="hidden md:flex text-2xl font-bold not-italic text-[#1F2937]"
               >
-                <a href="#">CRUD</a>
+                <a href="/home">CRUD</a>
               </span>
               <span class="md:hidden">
                 <svg
@@ -71,9 +71,8 @@
           class="hidden md:flex md:flex-col w-60 md:background border-r-2 fixed top-0 bottom-0 left-0 pt-[70px]"
         >
           <li class="relative border-b-2 list-none">
-            <a
-              class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-[#111827] text-ellipsis whitespace-nowrap rounded hover:text-[#1C64F2] transition duration-300 ease-in-out"
-              href="#!"
+            <span
+              class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-[#111827] text-ellipsis whitespace-nowrap rounded transition duration-300 ease-in-out"
               data-mdb-ripple="true"
               data-mdb-ripple-color="dark"
             >
@@ -90,13 +89,13 @@
                 />
               </svg>
               <span>Bảng điều khiển</span>
-            </a>
+            </span>
           </li>
-          <li class="relative list-none">
+          <li class="relative list-none" onclick="route()">
             <a
-              class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-[#111827] text-ellipsis whitespace-nowrap rounded hover:text-[#1C64F2] transition duration-300 ease-in-out"
+              class="flex items-center px-6 text-sm overflow-hidden text-[#111827] text-ellipsis whitespace-nowrap rounded hover:text-[#1C64F2] transition duration-300 ease-in-out"
+              style="height: 50px"
               href="/listProducts"
-              onclick="route()"
               data-mdb-ripple="true"
               data-mdb-ripple-color="dark"
             >
@@ -106,7 +105,7 @@
                 viewBox="0 0 20 20"
                 fill="currentColor"
               >
-                <path
+              <path
                   d="M3 12v3c0 1.657 3.134 3 7 3s7-1.343 7-3v-3c0 1.657-3.134 3-7 3s-7-1.343-7-3z"
                 />
                 <path
@@ -116,14 +115,14 @@
                   d="M17 5c0 1.657-3.134 3-7 3S3 6.657 3 5s3.134-3 7-3 7 1.343 7 3z"
                 />
               </svg>
-              <span>Danh sách sản phẩm</span>
+              Danh sách sản phẩm
             </a>
           </li>
-          <li class="relative list-none">
+          <li class="relative list-none" onclick="route()">
             <a
-              class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-[#111827] text-ellipsis whitespace-nowrap rounded hover:text-[#1C64F2] transition duration-300 ease-in-out"
-              href="/customers"
-              onclick="route()"
+              class="flex items-center text-sm px-6 h-12 overflow-hidden text-[#111827] text-ellipsis whitespace-nowrap rounded hover:text-[#1C64F2] transition duration-300 ease-in-out"
+              style="height: 50px"
+              href="/listCustomers"
               data-mdb-ripple="true"
               data-mdb-ripple-color="dark"
             >
@@ -137,13 +136,14 @@
                   d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"
                 />
               </svg>
-              <span>Khách hàng</span>
+              Khách hàng
             </a>
           </li>
           <li class="relative list-none">
             <a
-              class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-[#111827] text-ellipsis whitespace-nowrap rounded hover:text-[#1C64F2] transition duration-300 ease-in-out"
+              class="flex items-center text-sm px-6 h-12 overflow-hidden text-[#111827] text-ellipsis whitespace-nowrap rounded hover:text-[#1C64F2] transition duration-300 ease-in-out"
               href="#!"
+              style="height: 50px"
               data-mdb-ripple="true"
               data-mdb-ripple-color="dark"
             >
@@ -159,7 +159,7 @@
                   clip-rule="evenodd"
                 />
               </svg>
-              <span>Đơn hàng</span>
+              <p>Đơn hàng</p>
             </a>
           </li>
           <button
@@ -177,16 +177,41 @@
     </div>
     <script src="./src/javascript/router.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script
+      type="module"
+      src="./src/javascript/productsRecently/productRecen.js"
+    ></script>
     <script type="module" src="./src/javascript/customers/custom.js"></script>
     <script type="module" src="./src/javascript/products/product.js"></script>
     <script
       type="module"
       src="./src/javascript/listProducts/listProducts.js"
     ></script>
+    <script type="module" src="./src/javascript/chart/chart.js"></script>
     <script
       type="module"
-      src="./src/javascript/productsRecently/productRecen.js"
+      src="./src/javascript/functionWithProduct/searchProduct.js"
     ></script>
-    <script type="module" src="./src/javascript/chart/chart.js"></script>
+    <script
+      type="module"
+      src="./src/javascript/functionWithProduct/createProduct.js"
+    ></script>
+    <script
+      type="module"
+      src="./src/javascript/functionWithProduct/updateProduct.js"
+    ></script>
+    <script
+      type="module"
+      src="./src/javascript/functionWithProduct/filterProduct.js"
+    ></script>
+    <script
+      type="module"
+      src="./src/javascript/listCustomers/listCustomers.js"
+    ></script>
+    <script
+      type="module"
+      src="./src/javascript/functionWithCustomer/createCustomer.js"
+    ></script>
+    <script src="./src/javascript/validator/validator.js"></script>
   </body>
 </html>
