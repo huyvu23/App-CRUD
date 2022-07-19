@@ -1,6 +1,6 @@
-import { listProducts } from "../container";
+// import { listProducts } from "../container";
 // localStorage.setItem("listProducts", JSON.stringify(listProducts));
-let buttonSave = document.getElementById("save_Create_Account");
+let buttonSave = document.getElementById("save_Create_Product");
 buttonSave.addEventListener("click", (e) => {
   e.preventDefault();
   let name = document.getElementById("name_Create_Product").value;

@@ -1,18 +1,18 @@
 <section class="mt-[25px] mx-6">
   <div class="w-full overflow-visible background border px-[16px] py-[24px]">
-    <h1 class="font-text text-black font-weight">Danh sách sản phẩm</h1>
+    <h1 class="font-text text-black font-weight">Danh sách khách hàng</h1>
     <!-- !SEARCH,CREATE AND FILTER -->
     <section class="mt-[28px] flex justify-between">
       <div class="flex items-center">
         <div class="flex border-2 rounded">
           <input
-            id="inputSearchProduct"
+            id="inputSearchCustomer"
             type="text"
             class="px-2 py-2 w-80 h-10"
             placeholder="Search..."
           />
           <button
-            class="btn-Search flex items-center justify-center px-4 border-l"
+            class="btn-Search-Customer flex items-center justify-center px-4 border-l"
           >
             <svg
               class="w-6 h-6 text-gray-600"
@@ -33,18 +33,18 @@
           class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
           onclick="route()"
         >
-          <a href="/createProduct"> Thêm mới </a>
+          <a href="/createCustomer"> Thêm mới </a>
         </button>
         <button
           type="button"
-          class="btn_Filter_Product py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+          class="btn_filter py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
         >
           Bộ lọc
         </button>
       </div>
     </section>
     <!-- * BEGIN FILTER -->
-    <section class="filterProduct hidden mt-9 mb-5 px-5"></section>
+    <section class="hidden mt-9 mb-5"></section>
     <!-- * END FILTER -->
     <!-- !END -->
     <div class="flex flex-col">
@@ -58,38 +58,33 @@
                     scope="col"
                     class="text-xs text-[#6B7280] font-semibold px-6 py-4 text-left"
                   >
-                    SẢN PHẨM
+                    HỌ VÀ TÊN
                   </th>
                   <th
                     scope="col"
                     class="text-xs text-[#6B7280] font-semibold px-6 py-4 text-left"
                   >
-                    LOẠI
+                    SĐT
                   </th>
                   <th
                     scope="col"
                     class="text-xs text-[#6B7280] font-semibold px-6 py-4 text-left"
                   >
-                    NGÀY TẠO SẢN PHẨM
+                    NGÀY SINH
                   </th>
                   <th
                     scope="col"
                     class="text-xs text-[#6B7280] font-semibold px-6 py-4 text-left"
                   >
-                    SỐ LƯỢNG
+                    ĐỊA CHỈ
                   </th>
                   <th
                     scope="col"
                     class="text-xs text-[#6B7280] font-semibold px-6 py-4 text-left"
                   >
-                    GIÁ BÁN
+                    EMAIL
                   </th>
-                  <th
-                    scope="col"
-                    class="text-xs text-[#6B7280] font-semibold px-6 py-4 text-left"
-                  >
-                    TRẠNG THÁI
-                  </th>
+
                   <th
                     scope="col"
                     class="text-xs text-[#6B7280] font-semibold px-6 py-4 text-left"
@@ -98,7 +93,7 @@
                   </th>
                 </tr>
               </thead>
-              <tbody id="table-body" class="list-Products"></tbody>
+              <tbody id="table-body" class="list-Customers"></tbody>
             </table>
           </div>
           <!-- ! PAGINATION -->
@@ -106,22 +101,22 @@
             <!-- Help text -->
             <span class="text-sm text-gray-700 dark:text-gray-400">
               <span
-                class="number-start font-semibold text-gray-900 dark:text-white"
+                class="numberStartCustomer font-semibold text-gray-900 dark:text-white"
                 >1</span
               >
               -
               <span
-                class="number-end font-semibold text-gray-900 dark:text-white"
+                class="numberEndCustomer font-semibold text-gray-900 dark:text-white"
                 >5</span
               >
               of
               <span
-                class="totalProduct font-semibold text-gray-900 dark:text-white"
+                class="totalCustomer font-semibold text-gray-900 dark:text-white"
               ></span>
             </span>
             <div class="inline-flex xs:mt-0">
               <!-- Buttons -->
-              <button class="inline-flex items-center py-2 px-4 btn-prev btn-prev-filter">
+              <button class="inline-flex items-center py-2 px-4 btn-prev-customer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-5 w-5"
@@ -135,7 +130,7 @@
                   />
                 </svg>
               </button>
-              <button class="inline-flex items-center py-2 px-4 btn-next btn-next-filter">
+              <button class="inline-flex items-center py-2 px-4 btn-next-customer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-5 w-5"

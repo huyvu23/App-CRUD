@@ -2,12 +2,12 @@
   <div class="w-full overflow-visible background border px-[16px] py-[24px]">
     <!-- !SAVE AND BACK -->
     <section class="mt-[28px] flex justify-between">
-      <h1 class="font-text text-black font-weight">Thêm mới sản phẩm</h1>
+      <h1 class="font-text text-black font-weight">Thêm mới khách hàng</h1>
       <div>
         <button
           type="submit"
           class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-          id="save_Create_Product"
+          id="save_Create_Account"
         >
           Lưu lại
         </button>
@@ -16,7 +16,7 @@
           class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
           onclick="route()"
         >
-          <a href="/listProducts" onclick=""> Quay lại </a>
+          <a href="/listCustomers" onclick=""> Quay lại </a>
         </button>
       </div>
     </section>
@@ -29,10 +29,10 @@
           <label
             for="base-input"
             class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-            >Sản phẩm</label
+            >Họ và Tên</label
           >
           <input
-            id="name_Create_Product"
+            id="name_Create_Customer"
             type="text"
             class="bg-gray-50 border-solid border-2 rounded-lg border-gray-300 text-gray-900 text-sm dark:border-l-gray-700 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           />
@@ -42,11 +42,11 @@
           <label
             for="base-input"
             class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-            >Số lượng</label
+            >SĐT</label
           >
           <input
             type="text"
-            id="amount_Create_Product"
+            id="number_Phone_Customer"
             class="bg-gray-50 border-solid border-2 rounded-lg border-gray-300 text-gray-900 text-sm dark:border-l-gray-700 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           />
         </div>
@@ -57,13 +57,13 @@
           <label
             for="states"
             class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-            >Loại SP</label
+            >Quận/Huyện</label
           >
           <select
-            id="type_Create_Product"
+            id=""
             class="bg-gray-50 border-solid border-2 rounded-lg border-gray-300 text-gray-900 text-sm dark:border-l-gray-700 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           >
-            <option selected>Loại SP</option>
+            <option selected>Quận/Huyện</option>
             <option value="Ghế">Ghế</option>
             <option value="Máy Tính">Máy tính</option>
             <option value="Điện Thoại">Điện thoại</option>
@@ -76,13 +76,13 @@
           <label
             for="states"
             class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-            >Trạng thái</label
+            >Thành phố</label
           >
           <select
-            id="status_Create_Product"
+            id=""
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           >
-            <option selected>Trạng thái</option>
+            <option selected>Thành phố</option>
             <option value="Còn Hàng">Còn Hàng</option>
             <option value="Hết Hàng">Hết Hàng</option>
           </select>
@@ -98,7 +98,7 @@
           >
           <input
             type="date"
-            id="birthdaytime"
+            id="birthdaytime_Customer"
             name="birthdaytime"
             class="bg-gray-50 border-solid border-2 rounded-lg border-gray-300 text-gray-900 text-sm dark:border-l-gray-700 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           />
@@ -107,11 +107,11 @@
           <label
             for="base-input"
             class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-            >Giá bán</label
+            >Email</label
           >
           <input
             type="text"
-            id="price_Create_Product"
+            id="email_Create_Customer"
             class="bg-gray-50 border-solid border-2 rounded-lg border-gray-300 text-gray-900 text-sm dark:border-l-gray-700 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           />
         </div>
