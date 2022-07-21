@@ -1,16 +1,16 @@
 // import {listCustomer } from "../container";
 var listCustomerLocal = JSON.parse(localStorage.getItem("listCustomer"));
 let tableCustomers = document.querySelector(".list-Customers");
-let perPageCus = 5;
-let currentPageCus = 1;
-let startCus = 0;
-let endCus = perPageCus;
-let totalPagesCus = Math.ceil(listCustomerLocal.length / perPageCus);
 let totalCustomer = document.querySelector(".totalCustomer");
 let btnNextCus = document.querySelector(".btn-next-customer");
 let btnPrevCus = document.querySelector(".btn-prev-customer");
 let numberNextCus = document.querySelector(".numberStartCustomer");
 let numberEndCus = document.querySelector(".numberEndCustomer");
+let perPageCus = 5;
+let currentPageCus = 1;
+let startCus = 0;
+let endCus = perPageCus;
+let totalPagesCus = Math.ceil(listCustomerLocal.length / perPageCus);
 let createTableCustomers = () => {
   listCustomerLocal.map((item, index) => {
     if (index >= startCus && index < endCus) {
@@ -39,7 +39,7 @@ let createTableCustomers = () => {
         </td>
         <td class="flex px-6 py-4 whitespace-nowrap">
        
-            <a class = "btn-update-customer" href="/editCustomer">
+            <a  href="/editCustomer" class = "btn-update-customer">
              <svg  id=${index} xmlns="http://www.w3.org/2000/svg" style="color:#1A56DB" class=" h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
              </svg>    
@@ -65,7 +65,7 @@ const btnUpdateCusClick = () => {
   for (let i = 0; i < updateButtons.length; i++) {
     var updateButton = updateButtons[i];
     updateButton.addEventListener("click", (e) => {
-      e.preventDefault();
+      //   e.preventDefault();
       let customerNeedUpdate = [];
       //   console.log(parseInt(e.target.id));
       customerNeedUpdate.push({

@@ -42,9 +42,9 @@ btnSaveAccount.addEventListener("click", (e) => {
   e.preventDefault();
   let nameCus = document.getElementById("name_Create_Customer").value;
   let numberPhoneCus = document.getElementById("number_Phone_Customer").value;
-  let districtCus =
-    listDistrict.value.replace("Quận", "") &&
-    listDistrict.value.replace("Huyện", "");
+  let districtCus = listDistrict.value.includes("Huyện")
+    ? listDistrict.value.replace("Huyện", "")
+    : listDistrict.value.replace("Quận", "");
   let cityCus = listCity.value.replace("Thành phố", "");
   let birthDayCus = document.getElementById("birthdaytime_Customer").value;
   let emailCus = document.getElementById("email_Create_Customer").value;
@@ -64,4 +64,5 @@ btnSaveAccount.addEventListener("click", (e) => {
   listDistrict.value = "";
   listCity.value = "";
   document.getElementById("email_Create_Customer").value = "";
+  document.getElementById("birthdaytime_Customer").value = "";
 });

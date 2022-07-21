@@ -11,9 +11,10 @@ const routes = {
   "/home": "/src/pages/home.html",
   "/listProducts": "/src/pages/listProducts.html",
   "/createProduct": "/src/pages/createProduct.html",
-  "/editProduct": "src/pages/editProduct.html",
+  "/editProduct": "/src/pages/editProduct.html",
   "/listCustomers": "/src/pages/listCustomers.html",
-  "/createCustomer":"/src/pages/createCustomer.html"
+  "/createCustomer": "/src/pages/createCustomer.html",
+  "/editCustomer": "/src/pages/editCustomer.html",
 };
 
 const handleLocation = async () => {

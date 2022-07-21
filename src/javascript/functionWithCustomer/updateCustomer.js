@@ -67,9 +67,9 @@ saveUpdateCus.addEventListener("click", (e) => {
     "birthdaytime_Update_Customer"
   ).value;
   let cityUpdate = listCityUpdate.value.replace("Thành phố", "");
-  let districtUpdate =
-    listDistrictUpdate.value.replace("Quận", "") &&
-    listDistrictUpdate.value.replace("Huyện", "");
+  let districtUpdate = listDistrict.value.includes("Huyện")
+    ? listDistrict.value.replace("Huyện", "")
+    : listDistrict.value.replace("Quận", "");
 
   let customerUpdate = JSON.parse(localStorage.getItem("listCustomer"));
   customerUpdate[customerUpdate[0].id] = {
@@ -80,10 +80,11 @@ saveUpdateCus.addEventListener("click", (e) => {
     emailCus: emailUpdate,
   };
   //   !SET VALUE EQUAL EMPTY WHEN FINISH ONCLICK
-//   localStorage.setItem("listCustomer", JSON.stringify(customerUpdate));
-//   document.getElementById("name_Update_Customer").value = "";
-//   document.getElementById("number_Update_Customer").value = "";
-//   document.getElementById("email_Update_Customer ").value = "";
-//   listCityUpdate.value = "";
-//   listDistrictUpdate.value = "";
+  localStorage.setItem("listCustomer", JSON.stringify(customerUpdate));
+  document.getElementById("name_Update_Customer").value = "";
+  document.getElementById("number_Update_Customer").value = "";
+  document.getElementById("email_Update_Customer ").value = "";
+  document.getElementById("birthdaytime_Update_Customer").value = "";
+  listCityUpdate.value = "";
+  listDistrictUpdate.value = "";
 });
