@@ -42,7 +42,7 @@ saveBtn.addEventListener("click", (e) => {
     class: classOfProductUpdate,
   };
   localStorage.setItem("listProducts", JSON.stringify(productUpdate));
-  //! set value = string empty when finish onclick
+  //   !SET VALUE EQUAL EMPTY WHEN FINISH ONCLICK
   document.getElementById("name_Update_Product").value = "";
   document.getElementById("type_Update_Product").value = "";
   document.getElementById("birthdaytime_Update").value = "";

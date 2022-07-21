@@ -39,7 +39,7 @@ let createTableCustomers = () => {
         </td>
         <td class="flex px-6 py-4 whitespace-nowrap">
        
-            <a class = "btn-update-customer" href="/edit">
+            <a class = "btn-update-customer" href="/editCustomer">
              <svg  id=${index} xmlns="http://www.w3.org/2000/svg" style="color:#1A56DB" class=" h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
              </svg>    
@@ -67,12 +67,12 @@ const btnUpdateCusClick = () => {
     updateButton.addEventListener("click", (e) => {
       e.preventDefault();
       let customerNeedUpdate = [];
-      console.log(parseInt(e.target.id));
+      //   console.log(parseInt(e.target.id));
       customerNeedUpdate.push({
         id: parseInt(e.target.id),
         value: listCustomerLocal[parseInt(e.target.id)],
       });
-      console.log(customerNeedUpdate);
+      //   console.log(customerNeedUpdate);
       localStorage.setItem(
         "customerNeedUpdate",
         JSON.stringify(customerNeedUpdate)
@@ -82,6 +82,7 @@ const btnUpdateCusClick = () => {
 };
 btnUpdateCusClick();
 
+// ! BUTTON DELETE
 const btnDeleteCusClick = () => {
   var deleteButtons = document.querySelectorAll(".btn-delete-customer");
   for (let i = 0; i < deleteButtons.length; i++) {
@@ -99,6 +100,7 @@ const btnDeleteCusClick = () => {
   }
 };
 btnDeleteCusClick();
+
 //  ! BUTTON NEXT
 btnNextCus.addEventListener("click", () => {
   currentPageCus++;
